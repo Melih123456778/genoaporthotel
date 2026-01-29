@@ -978,7 +978,7 @@ body {
   position: relative;                 /* overlay düzgün dursun */
   min-height: 500px;
 
-  background-image: url("https://res.cloudinary.com/doqhdodfl/image/upload/v1769615997/about2_i6slqd.jpg"); /* yolu buna göre ayarla */
+  background-image: url("https://res.cloudinary.com/doqhdodfl/image/upload/v1769711455/gk3_ygzy4e.jpg"); /* yolu buna göre ayarla */
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
@@ -1018,7 +1018,7 @@ body {
   pointer-events:none;
 }
 
-/* İçerik üstte kalsın */
+/* İçerik */
 .about-section.about-bg .about-container{
   position: relative;
   z-index: 1;
@@ -1027,6 +1027,7 @@ body {
   padding: 70px 20px; /* senin spacingine göre değişebilir */
 }
 
+/* Başlık */
 .about-section.about-bg h2{
   color: #2b2b2b;
   font-weight: 500;
@@ -1034,12 +1035,14 @@ body {
   text-shadow: 0 3px 14px rgba(0,0,0,0.18);
 }
 
+/* Metin */
 .about-section.about-bg p{
   color: #3a3a3a;
   font-size: 0.95rem;
   line-height: 1.9;
   text-shadow: 0 2px 10px rgba(0,0,0,0.15);
 }
+
 
 
 /* ROOM SLIDER LIGHTBOX */
@@ -3276,12 +3279,226 @@ body.lightbox-open {
 }
 
 
+/* =========================
+   ONLY MOBILE SCALE DOWN
+========================= */
+@media (max-width: 768px) {
 
+  .site-footer {
+    padding: 40px 15px 15px;
+    font-size: 13px;
+  }
 
+  .footer-brand img {
+    width: 100px; /* logo küçülür */
+  }
 
+  .site-footer h4 {
+    font-size: 14px;
+  }
 
+  .site-footer p,
+  .site-footer a,
+  .site-footer li {
+    font-size: 13px;
+    line-height: 1.5;
+  }
 
+  .footer-links li {
+    margin-bottom: 6px;
+  }
 
+  .footer-bottom {
+    font-size: 11px;
+    margin-top: 25px;
+  }
 
+  .back-to-top {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
 
+@media (max-width: 768px) {
 
+  /* Footer genel alanı iyice küçült */
+  .site-footer {
+    padding: 16px 12px 8px;
+    padding-top: 24px;
+    padding-bottom: 70px; /* ikonlar için alan */
+    min-height: auto;
+  }
+
+  /* İç container: daha sıkı */
+  .footer-container {
+    gap: 14px;
+  }
+
+  .footer-brand {
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  .footer-brand img {
+    width: 82px;     /* ideal */
+    margin-bottom: 10px;
+    opacity: 0.95;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.25));
+  }
+
+  .footer-brand p {
+    font-size: 12px;
+    line-height: 1.35;
+    margin-bottom: 18px;
+    opacity: 0.9;
+  }
+
+  /* Başlıklar */
+  .site-footer h4 {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  /* Menü linkleri */
+  .footer-links li {
+    margin-bottom: 0;
+  }
+
+  .footer-links a {
+    font-size: 12px;
+    line-height: 1.4;
+
+  }
+
+  /* Contact yazıları */
+  .footer-contact p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }
+
+  .footer-social {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+  }
+
+  /* Sabit ikon bar varsa */
+  .floating-contact,
+  .fixed-contact,
+  .mobile-actions {
+    bottom: 10px;
+    z-index: 5;
+  }
+
+  .footer-bottom {
+    margin-top: 12px;
+    padding-bottom: 10px;
+    font-size: 10px;
+  }
+  /* Back to top daha minimal */
+  .back-to-top {
+    width: 28px;
+    height: 28px;
+    font-size: 13px;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  /* hero'ya dokunmuyoruz */
+  .hero {
+    min-height: 80vh;
+  }
+
+  /* SADECE yazıyı ortala */
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .hero-content h1 {
+    font-size: 25px;
+    margin-bottom: 8px;
+    line-height: 1.15;
+  }
+
+  .hero-content p {
+    font-size: 13.5px;
+    line-height: 1.35;
+    opacity: 0.9;
+  }
+}
+
+.footer-credit {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-bottom: 8px;
+  opacity: 0.55;
+}
+
+.footer-credit img {
+  width: 90px;
+  max-width: 40%;
+  filter: grayscale(100%);
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover varsa (desktop) */
+.footer-credit img:hover {
+  opacity: 0.85;
+  filter: grayscale(0%);
+}
+
+@media (max-width: 768px) {
+  .footer-credit {
+    margin-top: 6px;
+    padding-bottom: 4px;
+  }
+
+  .footer-credit img {
+    width: 72px;
+    opacity: 0.45;
+  }
+}
+
+/* Pirata Studio credit */
+.footer-credit {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+  padding-bottom: 10px;
+}
+
+.footer-credit img {
+  width: 130px;          /* ⬅️ büyütüldü */
+  max-width: 60%;
+  opacity: 0.65;
+  filter: grayscale(100%);
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover (desktop) */
+.footer-credit img:hover {
+  opacity: 0.9;
+  filter: grayscale(0%);
+}
+
+@media (max-width: 768px) {
+  .footer-credit img {
+    width: 110px;        /* mobilde ideal */
+    opacity: 0.6;
+  }
+}
