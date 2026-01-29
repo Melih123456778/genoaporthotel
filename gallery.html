@@ -2,39 +2,133 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Gallery | Genoa Port Hotel</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
 
+
+  <title>Gallery | Genoa Port Hotel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/style.css?v=99">
+
+ 
+</head>
+<body class="gallery-page">
+
+
+<!-- NAVBAR -->
 <header class="navbar">
   <nav>
-    <ul class="nav-left">
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="accommodation.html">Accommodation</a></li>
-      <li><a href="location.html">Location</a></li>
-    </ul>
 
-    <div class="logo">
-      <img src="genoaport.png">
+    
+
+
+    <!-- NAV MENU -->
+    <div class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#rooms">Rooms</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="index.html#restaurant">Restaurant</a></li>
+        <li><a href="index.html#location">Location</a></li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+      </ul>
     </div>
 
-    <ul class="nav-right">
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+
+    <a href="index.html" class="back-arrow">←</a>
+
+    
+    <!-- LOGO -->
+    <div class="logo center-logo">
+      <img src="genoaport.png" alt="Genoa Port Hotel">
+    </div>
+
+    <!-- RIGHT ICONS -->
+    <div class="nav-right">
+      <div class="nav-contact">
+        <a href="tel:+902120000000"><i class="fas fa-phone"></i></a>
+        <a href="https://wa.me/902120000000" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/genoaporthotel" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
   </nav>
 </header>
+<!-- NAVBAR BİTTİ -->
 
-<section class="page">
+<!-- GALLERY HERO -->
+<section class="gallery-hero">
   <h1>Gallery</h1>
-  <div class="gallery-grid">
-    <img src="assets/images/room1.jpg">
-    <img src="assets/images/room2.jpg">
-    <img src="assets/images/lobby.jpg">
-    <img src="assets/images/exterior.jpg">
-  </div>
+  
+  
 </section>
 
+<!-- GALLERY GRID -->
+<section class="gallery-grid">
+
+  <a href="https://res.cloudinary.com/doqhdodfl/image/upload/v1769617244/gallery1.1_inrh53.jpg" class="gallery-item">
+    <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769617244/gallery1.1_inrh53.jpg" alt="">
+  </a>
+
+  <a href="https://res.cloudinary.com/doqhdodfl/image/upload/v1769617249/gallery2.1_uhuglt.jpg" class="gallery-item">
+    <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769617249/gallery2.1_uhuglt.jpg" alt="">
+  </a>
+
+  <a href="https://res.cloudinary.com/doqhdodfl/image/upload/v1769617258/gallery3.1_jteuh6.jpg" class="gallery-item">
+    <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769617258/gallery3.1_jteuh6.jpg" alt="">
+  </a>
+
+  <a href="https://res.cloudinary.com/doqhdodfl/image/upload/v1769617265/gallery4_hgqyfq.jpg" class="gallery-item">
+    <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769617265/gallery4_hgqyfq.jpg" alt="">
+  </a>
+
+  <a href="https://res.cloudinary.com/doqhdodfl/image/upload/v1769617269/gallery5_dz7ccg.jpg" class="gallery-item">
+    <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769617269/gallery5_dz7ccg.jpg" alt="">
+  </a>
+  <a href="assets/css/js/images/gallery/gallery6.jpg" class="gallery-item">
+    <img src="assets/css/js/images/gallery/gallery6.jpg" alt="">
+  </a>
+  <a href="assets/images/gallery/3.jpg" class="gallery-item">
+    <img src="assets/images/gallery/3.jpg" alt="">
+  </a>
+  <a href="assets/images/gallery/3.jpg" class="gallery-item">
+    <img src="assets/images/gallery/3.jpg" alt="">
+  </a>
+  <a href="assets/images/gallery/3.jpg" class="gallery-item">
+    <img src="assets/images/gallery/3.jpg" alt="">
+  </a>
+  <a href="assets/images/gallery/3.jpg" class="gallery-item">
+    <img src="assets/images/gallery/3.jpg" alt="">
+  </a>
+  <a href="assets/images/gallery/3.jpg" class="gallery-item">
+    <img src="assets/images/gallery/3.jpg" alt="">
+  </a>
+  <a href="assets/images/gallery/3.jpg" class="gallery-item">
+    <img src="assets/images/gallery/3.jpg" alt="">
+  </a>
+  <!-- diğerleri aynı şekilde -->
+</section>
+
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+
+  <span class="close">&times;</span>
+  <span class="arrow left">&#10094;</span>
+
+  <div class="lightbox-content">
+    <img id="lightbox-img" alt="">
+  </div>
+
+  <span class="arrow right">&#10095;</span>
+</div>
+
+
+
+
+
+<script src="assets/css/js/navbar.js"></script>
+<script src="assets/css/js/gallery.js"></script>
+
 </body>
+
 </html>
