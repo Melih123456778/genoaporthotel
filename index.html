@@ -1,123 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <title>Genoa Port Hotel | Karaköy</title>
-  
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-  
-    <!-- ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
-    <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Genoa Port Hotel | Karaköy</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  </head>
-  
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
 
 <body>
 
-  <header class="navbar">
-    <nav>
+<header class="navbar">
+  <nav>
 
-     
+    <!-- NAV MENU -->
+    <div class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="index.html#about" data-section="about">About</a></li>
+        <li><a href="index.html#rooms" data-section="rooms">Rooms</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html#restaurant" data-section="restaurant">Restaurant</a></li>
+        <li><a href="index.html#reviews" data-section="reviews">Reviews</a></li>
+        <li><a href="index.html#location" data-section="location">Location</a></li>
+        <li><a href="index.html#contact" data-section="contact">Contact Us</a></li>
+      </ul>
+    </div>
 
-      
+    <!-- LOGO (CENTER) -->
+    <div class="logo center-logo">
+      <img src="genoaport.png" alt="Genoa Port Hotel" />
+    </div>
 
-      
-      <!-- NAV MENU -->
-      <div class="nav-menu" id="navMenu">
-        <ul>
-          <li><a href="index.html#about" data-section="about">About</a></li>
-          <li><a href="index.html#rooms" data-section="rooms">Rooms</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="index.html#restaurant" data-section="restaurant">Restaurant</a></li>
-          <li><a href="index.html#location" data-section="location">Location</a></li>
-          <li><a href="index.html#contact" data-section="contact">Contact Us</a></li>
-        </ul>
+    <!-- RIGHT: CONTACT + CTA -->
+    <div class="nav-right">
+      <div class="nav-contact">
+        <a href="tel:+905335013634" title="Call us"><i class="fas fa-phone"></i></a>
+
+        <!-- ✅ FIXED WHATSAPP LINK -->
+        <a href="https://wa.me/905335013634" target="_blank" rel="noopener" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="https://www.instagram.com/genoaportkarakoy?igsh=MWp0c2p6YTNxc3RndQ%3D%3D" target="_blank" rel="noopener" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
-      
-      <!-- LOGO (ORTADA) -->
-      <div class="logo center-logo">
-        <img src="genoaport.png" alt="Genoa Port Hotel">
-      </div>
 
-      <!-- SAĞ: TELEFON & WHATSAPP -->
-      <!-- SAĞ TARAF -->
-<div class="nav-right">
+      <!-- ✅ CTA (Book Now) -->
+      <a class="nav-cta" href="https://wa.me/905335013634" target="_blank" rel="noopener">Book Now</a>
+    </div>
 
-  <div class="nav-contact">
-    <a href="tel:+902120000000" title="Call us">
-      <i class="fas fa-phone"></i>
-    </a>
+  </nav>
 
-    <a href="https://wa.me/902120000000" target="_blank" title="WhatsApp">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <a href="https://www.instagram.com/genoaportkarakoy?igsh=MWp0c2p6YTNxc3RndQ%3D%3D" target="_blank" title="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-  </div>
-
-
-
-</nav>
-
-<div class="menu-overlay" id="menuOverlay"></div>
-
+  <div class="menu-overlay" id="menuOverlay"></div>
 </header>
 
-  <!-- MOBILE HAMBURGER -->
+<!-- MOBILE HAMBURGER -->
 <div class="hamburger" id="hamburger">
   <span></span>
   <span></span>
   <span></span>
 </div>
 
+<section class="hero">
+  <div class="hero-slides">
+    <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769732126/IMG_3142_qkq7ng.jpg" class="active" alt="Genoa Port Hotel" />
+    <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769615235/welcome2_prrdwe.jpg" alt="Lobby" />
+    <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769764204/IMG_3165_m9ukmz.jpg" alt="Room" />
+  </div>
 
-  
-  
+  <div class="hero-overlay"></div>
 
-  <section class="hero">
-    <div class="hero-slides">
-      <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769614830/welcome1_by4j4p.jpg" class="active">
-      <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769615235/welcome2_prrdwe.jpg">
-      <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769615242/welcome3_kilhi1.jpg">
+  <div class="hero-content">
+    <h1>Genoa Port Hotel</h1>
+    <p>Modern comfort, calm design and city views in Karaköy, Istanbul</p>
+
+    <!-- ✅ HERO CTA -->
+    <div class="hero-cta">
+      <a class="hero-btn primary" href="https://wa.me/905335013634" target="_blank" rel="noopener">Book on WhatsApp</a>
+      <a class="hero-btn" href="tel:+905335013634">Call Now</a>
     </div>
-  
-    <div class="hero-overlay"></div>
-  
-    <div class="hero-content">
-      <h1>Genoa Port Hotel</h1>
-
-      <p>Modern comfort, calm design and city views in Karaköy, Istanbul</p>
-    </div>
-  </section>
-  
-  
-  
-  
-
-
-  
-
-
-
-
-
+  </div>
+</section>
 
 <section id="about" class="content-block about-section about-bg">
   <div class="about-container">
@@ -130,41 +108,30 @@
       Genoa Port Hotel is a modern and refined hotel located in Karaköy, one of Istanbul’s most vibrant and culturally rich districts.
       Designed for travelers who value comfort, calm and authenticity, the hotel offers thoughtfully designed rooms, elegant interiors and a peaceful atmosphere within the dynamic rhythm of the city.
       With its central location, Genoa Port Hotel provides effortless access to Galata, the historic peninsula, cultural landmarks, restaurants and business hubs, making it an ideal choice for both business and leisure stays in Istanbul.
-      </p>
-      
-      
+    </p>
   </div>
 </section>
-
 
 <!-- ACCOMMODATION -->
 <section class="content-block" id="rooms">
   <h2 class="fade-title">Accommodation</h2>
-  <p class="section-intro">
-    Thoughtfully designed rooms combining comfort, elegance and calm.
-  </p>
+  <p class="section-intro">Thoughtfully designed rooms combining comfort, elegance and calm.</p>
 
   <div class="rooms-grid">
 
-    
-    
     <!-- STANDARD ROOM -->
-     <div class="room-card"
+    <div class="room-card"
       data-images='[
         "https://res.cloudinary.com/doqhdodfl/image/upload/v1769619003/standart2_c41vvz.jpg",
-        "https://res.cloudinary.com/doqhdodfl/image/upload/v1769619003/standart2_c41vvz.jpg",
         "https://res.cloudinary.com/doqhdodfl/image/upload/v1769619008/standart3_phbcqe.jpg",
-        "https://res.cloudinary.com/doqhdodfl/image/upload/v1769619013/standart4_jmazfp.jpg"
+        "https://res.cloudinary.com/doqhdodfl/image/upload/v1769732173/6-IMG_2945_kbp9uw.jpg",
+        "https://res.cloudinary.com/doqhdodfl/image/upload/v1769732157/3-IMG_2935_edjq4j.jpg"
       ]'>
 
-      
       <div class="room-image">
-      <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769619017/standart5_aejnf4.jpg" alt="Standard Room">
-      <span class="photo-icon">
-        <i class="fas fa-images"></i>
-      </span>
-    </div> 
-      
+        <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769619017/standart5_aejnf4.jpg" alt="Standard Room">
+        <span class="photo-icon"><i class="fas fa-images"></i></span>
+      </div>
 
       <div class="room-content">
         <div class="room-header">
@@ -172,19 +139,15 @@
           <span class="room-size"></span>
         </div>
 
-        <p class="room-desc">
-          Minimal design with warm tones and modern comfort.
-        </p>
+        <p class="room-desc">Minimal design with warm tones and modern comfort.</p>
 
         <ul class="room-features">
-          <li><strong>Room Size:</strong> 14 m²</li>
+          <li><strong>Room Size:</strong> 16 m²</li>
           <li><strong>Bed Type:</strong> Queen Bed</li>
           <li><strong>Maximum Guests:</strong> 2</li>
           <li><strong>Smoking Policy:</strong> Non-smoking</li>
           <li><strong>Housekeeping:</strong> Daily housekeeping service</li>
         </ul>
-
-       
       </div>
     </div>
 
@@ -194,25 +157,27 @@
         "https://res.cloudinary.com/doqhdodfl/image/upload/v1769616131/deluxe1_zx59mu.jpg",
         "https://res.cloudinary.com/doqhdodfl/image/upload/v1769616144/deluxe2_whl9tk.jpg",
         "https://res.cloudinary.com/doqhdodfl/image/upload/v1769616157/deluxe3_kvkjgu.jpg",
-        "https://res.cloudinary.com/doqhdodfl/image/upload/v1769616163/deluxe4_spjx9z.jpg"
+        "https://res.cloudinary.com/doqhdodfl/image/upload/v1769616163/deluxe4_spjx9z.jpg",
+        "https://res.cloudinary.com/doqhdodfl/image/upload/v1769731785/9-IMG_2102_qgffwx.jpg",
+        "https://res.cloudinary.com/doqhdodfl/image/upload/v1769731780/19-IMG_2549_lsr4x6.jpg",
+        "https://res.cloudinary.com/doqhdodfl/image/upload/v1769731779/12-IMG_2451_v9sdan.jpg",
+        "https://res.cloudinary.com/doqhdodfl/image/upload/v1769731755/5-IMG_1894_wnicyg.jpg",
+        "https://res.cloudinary.com/doqhdodfl/image/upload/v1769731769/3-IMG_1808_hbn8a5.jpg",
+        "https://res.cloudinary.com/doqhdodfl/image/upload/v1769617244/gallery1.1_inrh53.jpg"
       ]'>
 
       <div class="room-image">
-      <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769616169/deluxe5_xmua0e.jpg" alt="Deluxe Room">
-      <span class="photo-icon">
-        <i class="fas fa-images"></i>
-      </span>
-    </div>
-      
+        <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769616169/deluxe5_xmua0e.jpg" alt="Deluxe Room">
+        <span class="photo-icon"><i class="fas fa-images"></i></span>
+      </div>
+
       <div class="room-content">
         <div class="room-header">
           <h3>Deluxe Room</h3>
           <span class="room-size"></span>
         </div>
 
-        <p class="room-desc">
-          Spacious room with refined details and warm lighting.
-        </p>
+        <p class="room-desc">Spacious room with refined details and warm lighting.</p>
 
         <ul class="room-features">
           <li><strong>Room Size:</strong> 24 m²</li>
@@ -221,28 +186,23 @@
           <li><strong>Smoking Policy:</strong> Non-smoking</li>
           <li><strong>Housekeeping:</strong> Daily housekeeping service</li>
         </ul>
-
-        
       </div>
     </div>
 
-  
-
-    <!-- Twin -->
+    <!-- TWIN ROOM -->
     <div class="room-card"
       data-images='[
         "https://res.cloudinary.com/doqhdodfl/image/upload/v1769616269/twin1_ihigtx.jpg",
         "https://res.cloudinary.com/doqhdodfl/image/upload/v1769616279/twin2_jabe01.jpg",
         "https://res.cloudinary.com/doqhdodfl/image/upload/v1769616283/twin3_dm13hw.jpg",
-        "https://res.cloudinary.com/doqhdodfl/image/upload/v1769616291/twin4_igjrct.jpg"
+        "https://res.cloudinary.com/doqhdodfl/image/upload/v1769616291/twin4_igjrct.jpg",
+        "https://res.cloudinary.com/doqhdodfl/image/upload/v1769616297/twin5_rmwzeh.jpg"
       ]'>
-      
+
       <div class="room-image">
-      <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769616297/twin5_rmwzeh.jpg" alt="Twin Room">
-      <span class="photo-icon">
-        <i class="fas fa-images"></i>
-      </span>
-    </div>
+        <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769616297/twin5_rmwzeh.jpg" alt="Twin Room">
+        <span class="photo-icon"><i class="fas fa-images"></i></span>
+      </div>
 
       <div class="room-content">
         <div class="room-header">
@@ -250,21 +210,18 @@
           <span class="room-size"></span>
         </div>
 
-        <p class="room-desc">
-          Elegant suite offering comfort, space and privacy.
-        </p>
+        <p class="room-desc">Elegant suite offering comfort, space and privacy.</p>
 
         <ul class="room-features">
-          <li><strong>Room Size:</strong> 16 m²</li>
+          <li><strong>Room Size:</strong> 14 m²</li>
           <li><strong>Bed Type:</strong> 2 Standart Beds</li>
           <li><strong>Maximum Guests:</strong> 2</li>
           <li><strong>Smoking Policy:</strong> Non-smoking</li>
           <li><strong>Housekeeping:</strong> Daily housekeeping service</li>
         </ul>
       </div>
-      
-      </div>
-    
+    </div>
+
   </div>
 
   <div class="rooms-dots">
@@ -274,70 +231,69 @@
   </div>
 </section>
 
-
-  
-
-<!-- GALLERY -->
-<!-- <section class="content-block" id="gallery">
-  <h2 class="fade-title">Gallery</h2>
-
-  <div class="gallery-grid">
-    <div class="gallery-item">
-      <img src="assets/css/js/images/room1.jpg" data-full="assets/css/js/images/room1.jpg" alt="Rooms">
-      <div class="gallery-overlay"><span>Rooms</span></div>
-    </div>
-
-    <div class="gallery-item">
-      <img src="assets/css/js/images/room2.jpg" data-full="assets/css/js/images/room2.jpg" alt="Rooms">
-      <div class="gallery-overlay"><span>Rooms</span></div>
-    </div>
-
-    <div class="gallery-item">
-      <img src="assets/css/js/images/lobby.jpg" data-full="assets/css/js/images/lobby.jpg" alt="Lobby">
-      <div class="gallery-overlay"><span>Lobby</span></div>
-    </div>
-
-    <div class="gallery-item">
-      <img src="assets/css/js/images/exterior.jpg" data-full="assets/css/js/images/exterior.jpg" alt="Exterior">
-      <div class="gallery-overlay"><span>Exterior</span></div>
-    </div>
-  </div>
-</section> -->
-
-
 <!-- RESTAURANT SECTION -->
 <section id="restaurant" class="restaurant-section">
-
   <div class="section-header">
     <span class="section-label">DINING</span>
     <h2>Restaurant</h2>
     <span class="section-divider"></span>
-    <p>
-      A refined dining experience inspired by local flavors and timeless comfort.
-    </p>
+    <p>A refined dining experience inspired by local flavors and timeless comfort.</p>
   </div>
 
   <div class="restaurant-slider">
-
     <div class="restaurant-track">
-      <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769616385/res1_xwkm9c.jpg" alt="">
+      <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769768186/woman_u0qkev.jpg" alt="">
       <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769618710/res5_jxauuq.jpg" alt="">
-      <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769616400/res3.1_byntlo.jpg" alt="">
+      <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769795442/ChatGPT_Image_30_Oca_2026_18_48_12_puvpkv.png" alt="">
       <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769616405/res4_l04pdz.jpg" alt="">
-      <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769700408/res2_nbzdyi.jpg" alt="">
+      <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1771883495/IMG_4066_munfws.jpg" alt="">
+      <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1771883733/IMG_3438_tgsgke.jpg" alt="">
     </div>
 
-    <!-- OKLAR -->
     <button class="restaurant-arrow left">&#10094;</button>
     <button class="restaurant-arrow right">&#10095;</button>
-
   </div>
-
 </section>
 
+<!-- GOOGLE REVIEWS (AUTO) -->
+<section class="content-block" id="reviews">
+  <h2 class="fade-title">Reviews</h2>
+  <p class="section-intro">Latest guest feedback from Google.</p>
 
+  <div class="gr-wrap">
+    <div class="gr-summary">
+      <div class="gr-score">
+        <span id="gr-rating" class="gr-score-num">—</span>
+        <span class="gr-score-outof">/ 5</span>
+      </div>
 
+      <div id="gr-stars" class="gr-stars" aria-label="Google rating stars"></div>
 
+      <div class="gr-meta">
+        <span class="gr-badge"><i class="fa-brands fa-google"></i> Google Reviews</span>
+        <span id="gr-total" class="gr-hint">—</span>
+      </div>
+
+      <a id="gr-read" class="gr-btn gr-btn-primary" href="#" target="_blank" rel="noopener">Read on Google</a>
+      <a id="gr-write" class="gr-btn gr-btn-outline" href="#" target="_blank" rel="noopener">Write a review</a>
+    </div>
+
+    <!-- ✅ SLIDER -->
+    <div class="gr-slider">
+      <button class="gr-arrow left" type="button" aria-label="Previous review">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <div class="gr-track" id="gr-track"></div>
+
+      <button class="gr-arrow right" type="button" aria-label="Next review">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div id="reviews-map" style="display:none;"></div>
+</section>
 
 <!-- LOCATION -->
 <section class="content-block" id="location">
@@ -350,79 +306,61 @@
     comfortably on foot or within minutes by tram, ferry, or taxi.
   </p>
 
-  
   <div class="location-highlights">
     <div class="highlight-card">🚋 Tramway – 2 min walk</div>
     <div class="highlight-card">⛴ Ferry – 5 min walk</div>
     <div class="highlight-card">🗼 Galata Tower – 7 min walk</div>
     <div class="highlight-card">🛍 Galataport – 10 min</div>
   </div>
-  <div class="nearby-slider">
 
+  <div class="nearby-slider">
     <div class="nearby-track">
-  
       <div class="nearby-card">
-        <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769616505/galatatower_m9cqin.jpg">
+        <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769616505/galatatower_m9cqin.jpg" alt="">
         <div class="nearby-info">
           <h4>Galata Tower</h4>
-          <p>
-            One of Istanbul’s most iconic landmarks, offering panoramic city views
-            and a vibrant historic atmosphere.
-          </p>
+          <p>One of Istanbul’s most iconic landmarks, offering panoramic city views and a vibrant historic atmosphere.</p>
           <span>7 min walk</span>
         </div>
       </div>
-  
+
       <div class="nearby-card">
-        <img src="assets/css/js/images/location/galataport.jpg">
+        <img src="assets/css/js/images/location/galataport.jpg" alt="">
         <div class="nearby-info">
           <h4>Galataport</h4>
-          <p>
-            A modern waterfront destination with dining, shopping and cultural spaces.
-          </p>
+          <p>A modern waterfront destination with dining, shopping and cultural spaces.</p>
           <span>10 min walk</span>
         </div>
       </div>
-  
+
       <div class="nearby-card">
-        <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769616859/taksim_ldapqg.jpg">
+        <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769616859/taksim_ldapqg.jpg" alt="">
         <div class="nearby-info">
           <h4>Taksim Square</h4>
-          <p>
-            The vibrant heart of Istanbul connecting historic streets with modern life.
-          </p>
+          <p>The vibrant heart of Istanbul connecting historic streets with modern life.</p>
           <span>10 min drive</span>
         </div>
       </div>
-  
-      
-  
+
       <div class="nearby-card">
-        <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769616845/sultanahmet_cyasyo.jpg">
+        <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769616845/sultanahmet_cyasyo.jpg" alt="">
         <div class="nearby-info">
           <h4>Sultanahmet</h4>
-          <p>
-            Home to Hagia Sophia and the Blue Mosque, where history comes alive.
-          </p>
+          <p>Home to Hagia Sophia and the Blue Mosque, where history comes alive.</p>
           <span>15 min drive</span>
         </div>
       </div>
-  
+
       <div class="nearby-card">
-        <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769616475/eminonu_qkffjk.jpg">
+        <img src="https://res.cloudinary.com/doqhdodfl/image/upload/v1769616475/eminonu_qkffjk.jpg" alt="">
         <div class="nearby-info">
           <h4>Eminönü</h4>
-          <p>
-            A bustling district famous for spice markets, ferries and city energy.
-          </p>
+          <p>A bustling district famous for spice markets, ferries and city energy.</p>
           <span>10 min walk</span>
         </div>
       </div>
-  
     </div>
   </div>
-  
-  
 
   <iframe
     src="https://www.google.com/maps?q=Karaköy+Necatibey+Caddesi&output=embed"
@@ -439,36 +377,30 @@
   <div class="footer-container">
     <div class="footer-brand">
       <img src="genoaport.png" alt="Genoa Port Hotel">
-      <p>
-        A refined stay in the heart of Karaköy.<br>
-        Timeless comfort & warm hospitality.
-      </p>
+      <p>A refined stay in the heart of Karaköy.<br>Timeless comfort & warm hospitality.</p>
     </div>
 
     <div class="footer-links">
       <h4>Explore</h4>
       <ul class="footer-links">
-        <li><a href="#gallery.html">Gallery</a></li>
+        <!-- ✅ FIXED -->
+        <li><a href="gallery.html">Gallery</a></li>
         <li><a href="#rooms">Accommodation</a></li>
         <li><a href="#location">Location</a></li>
         <li><a href="#about">About</a></li>
       </ul>
-      
     </div>
 
-  
-
-    
     <div class="footer-contact">
       <h4>Contact</h4>
       <p>Necatibey Street, Karaköy<br>Istanbul, Türkiye</p>
-      <p>✉️ info@genoaporthotel.com<br>☎️ +90 212 000 00 00</p>
+      <p>✉️ info@genoaporthotel.com<br>☎️ +90 533 501 36 34</p>
 
       <div class="footer-social">
         <a href="https://www.instagram.com/genoaportkarakoy?igsh=MWp0c2p6YTNxc3RndQ==" class="social-link instagram">Instagram</a>
-        <a href="https://www.google.com/maps/place/Genoa+Port+Hotel/@41.0246659,28.9672829,15z/data=!3m1!4b1!4m9!3m8!1s0x14cab9ef04a2c05f:0xe4f3cd3b9779b810!5m2!4m1!1i2!8m2!3d41.0246664!4d28.9775826!16s%2Fg%2F11swz63cb_?entry=ttu&g_ep=EgoyMDI2MDExOS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D" class="social-link maps">Google Maps</a>
+        <a href="https://www.google.com/maps/place/Genoa+Port+Hotel/@41.0246659,28.9672829,15z/data=!3m1!4b1!4m9!3m8!1s0x14cab9ef04a2c05f:0xe4f3cd3b9779b810!5m2!4m1!1i2!8m2!3d41.0246664!4d28.9775826!16s%2Fg%2F11swz63cb_?entry=ttu"
+           class="social-link maps">Google Maps</a>
       </div>
-      
     </div>
   </div>
 
@@ -479,35 +411,17 @@
   </div>
 
   <div class="footer-bottom">
-    © 2026 Genoa Port Hotel. All rights reserved. 
+    © 2026 Genoa Port Hotel. All rights reserved.
   </div>
-
-  
 </footer>
 
 <button class="back-to-top" id="backToTop">↑</button>
 
 <script src="assets/css/js/animation.js"></script>
 
-<!-- ROOM LIGHTBOX -->
-<!-- <div class="room-lightbox" id="roomLightbox">
-  <div class="lightbox-overlay"></div>
-
-  <div class="lightbox-content">
-    <button class="lightbox-close">&times;</button>
-
-    <button class="lightbox-prev">&#10094;</button>
-
-    <img id="lightboxImage" src="" alt="Room Image">
-
-    <button class="lightbox-next">&#10095;</button>
-  </div>
-</div> -->
-
 <!-- ROOM SLIDER LIGHTBOX -->
 <div class="room-lightbox" id="roomLightbox">
   <div class="room-overlay"></div>
-
   <div class="room-box">
     <button class="room-close">&times;</button>
     <button class="room-prev">&#10094;</button>
@@ -517,14 +431,12 @@
 </div>
 
 <div class="mobile-actions">
-  <a href="tel:+902120000000"><i class="fas fa-phone"></i></a>
-  <a href="https://wa.me/902120000000"><i class="fab fa-whatsapp"></i></a>
+  <a href="tel:+905335013634"><i class="fas fa-phone"></i></a>
+  <a href="https://wa.me/905335013634"><i class="fab fa-whatsapp"></i></a>
   <a href="https://www.instagram.com/genoaportkarakoy?igsh=MWp0c2p6YTNxc3RndQ=="><i class="fab fa-instagram"></i></a>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-
-
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -534,107 +446,243 @@ document.addEventListener("DOMContentLoaded", function () {
     touchNavigation: true,
     closeButton: true,
     arrows: true,
-    zoomable: false,
-    draggable: false,
-    openEffect: 'fade',
-    closeEffect: 'fade',
-    slideEffect: 'slide',
-    cssEfects: {
-      fade: { in: 'fadeIn', out: 'fadeOut' },
-      slide: { in: 'slideInRight', out: 'slideOutLeft' }
-    }
+    zoomable: false
   });
 });
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll(".hero-slides img");
+  let current = 0;
+  if (slides.length <= 1) return;
 
-
+  setInterval(() => {
+    slides[current].classList.remove("active");
+    current = (current + 1) % slides.length;
+    slides[current].classList.add("active");
+  }, 3000);
+});
+</script>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const slides = document.querySelectorAll(".hero-slides img");
-    let current = 0;
-  
-    if (slides.length <= 1) return;
-  
-    setInterval(() => {
-      slides[current].classList.remove("active");
-      current = (current + 1) % slides.length;
-      slides[current].classList.add("active");
-    }, 3000);
+const siteNavbar = document.querySelector('.navbar');
+if (siteNavbar) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 80) siteNavbar.classList.add('scrolled');
+    else siteNavbar.classList.remove('scrolled');
   });
-  </script>
-  
+}
+</script>
 
-  <script>
-    const siteNavbar = document.querySelector('.navbar');
-  
-    if (siteNavbar) {
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 80) {
-          siteNavbar.classList.add('scrolled');
-        } else {
-          siteNavbar.classList.remove('scrolled');
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.querySelector(".restaurant-track");
+  const slides = document.querySelectorAll(".restaurant-track img");
+  const nextBtn = document.querySelector(".restaurant-arrow.right");
+  const prevBtn = document.querySelector(".restaurant-arrow.left");
+  if(!track || !slides.length || !nextBtn || !prevBtn) return;
+
+  let index = 0;
+  function updateSlide(){ track.style.transform = `translateX(-${index * 100}%)`; }
+
+  nextBtn.addEventListener("click", () => { index = (index + 1) % slides.length; updateSlide(); });
+  prevBtn.addEventListener("click", () => { index = (index - 1 + slides.length) % slides.length; updateSlide(); });
+
+  setInterval(() => { index = (index + 1) % slides.length; updateSlide(); }, 2000);
+});
+</script>
+
+<script>
+const roomsGrid = document.querySelector('.rooms-grid');
+const dots = document.querySelectorAll('.rooms-dots .dot');
+if (roomsGrid && dots.length) {
+  roomsGrid.addEventListener('scroll', () => {
+    const cardWidth = roomsGrid.querySelector('.room-card')?.offsetWidth || 1;
+    const index = Math.round(roomsGrid.scrollLeft / cardWidth);
+    dots.forEach(dot => dot.classList.remove('active'));
+    if (dots[index]) dots[index].classList.add('active');
+  });
+}
+</script>
+
+<script>
+  // Google Reviews (Places). Requires Maps JavaScript API + Places API.
+  const HOTEL_QUERY = "Genoa Port Hotel, Müeyyetzade Mah. Serçe Sk. No:3, 34425 Beyoğlu/İstanbul";
+  const FALLBACK_GOOGLE_MAPS_URL = "https://www.google.com/maps/place/Genoa+Port+Hotel/@41.0246659,28.9672829,15z/data=!3m1!4b1!4m9!3m8!1s0x14cab9ef04a2c05f:0xe4f3cd3b9779b810!5m2!4m1!1i2!8m2!3d41.0246664!4d28.9775826!16s%2Fg%2F11swz63cb_?entry=ttu";
+
+  function grSafeText(s){
+    return (s || "").replace(/[&<>"']/g, (c) => ({
+      "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+    }[c]));
+  }
+
+  function grFormatDate(ts){
+    if(!ts) return "";
+    const d = new Date(ts * 1000);
+    return d.toLocaleDateString("en-GB", { year:"numeric", month:"short", day:"2-digit" });
+  }
+
+  function grRenderStars(el, rating){
+    el.innerHTML = "";
+    const full = Math.floor(rating);
+    const half = (rating - full) >= 0.5 ? 1 : 0;
+    const empty = 5 - full - half;
+
+    for(let i=0;i<full;i++) el.insertAdjacentHTML("beforeend", '<i class="fa-solid fa-star"></i>');
+    if(half) el.insertAdjacentHTML("beforeend", '<i class="fa-solid fa-star-half-stroke"></i>');
+    for(let i=0;i<empty;i++) el.insertAdjacentHTML("beforeend", '<i class="fa-regular fa-star"></i>');
+  }
+
+  function initGoogleReviews(){
+    const mapEl = document.getElementById("reviews-map");
+    if(!mapEl) return;
+
+    const map = new google.maps.Map(mapEl, { center: { lat: 41.0246664, lng: 28.9775826 }, zoom: 15 });
+    const service = new google.maps.places.PlacesService(map);
+
+    service.findPlaceFromQuery(
+      {
+        query: HOTEL_QUERY,
+        fields: ["place_id"],
+        locationBias: new google.maps.Circle({
+          center: { lat: 41.0246664, lng: 28.9775826 },
+          radius: 800
+        })
+      },
+      (candidates, status) => {
+        const readBtn  = document.getElementById("gr-read");
+        const writeBtn = document.getElementById("gr-write");
+
+        if (readBtn) readBtn.href = FALLBACK_GOOGLE_MAPS_URL;
+
+        if (status !== google.maps.places.PlacesServiceStatus.OK || !candidates || !candidates.length){
+          console.error("Google Reviews findPlaceFromQuery error:", status);
+          return;
         }
-      });
-    }
-  </script>
-  
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-  
-    const track = document.querySelector(".restaurant-track");
-    const slides = document.querySelectorAll(".restaurant-track img");
-    const nextBtn = document.querySelector(".restaurant-arrow.right");
-    const prevBtn = document.querySelector(".restaurant-arrow.left");
-  
-    let index = 0;
-  
-    function updateSlide() {
-      track.style.transform = `translateX(-${index * 100}%)`;
-    }
-  
-    nextBtn.addEventListener("click", () => {
-      index = (index + 1) % slides.length;
-      updateSlide();
-    });
-  
-    prevBtn.addEventListener("click", () => {
-      index = (index - 1 + slides.length) % slides.length;
-      updateSlide();
-    });
-  
-    // 🔥 OTOMATİK SLIDE
-    setInterval(() => {
-      index = (index + 1) % slides.length;
-      updateSlide();
-    }, 2000);
-  
-  });
-  </script>
+        const placeId = candidates[0].place_id;
 
-  
-<script>
-  const roomsGrid = document.querySelector('.rooms-grid');
-  const dots = document.querySelectorAll('.rooms-dots .dot');
+        const mapsUrl  = `https://www.google.com/maps/place/?q=place_id:${encodeURIComponent(placeId)}`;
+        const writeUrl = `https://search.google.com/local/writereview?placeid=${encodeURIComponent(placeId)}`;
+        if (readBtn)  readBtn.href  = mapsUrl;
+        if (writeBtn) writeBtn.href = writeUrl;
 
-  if (roomsGrid && dots.length) {
-    roomsGrid.addEventListener('scroll', () => {
-      const cardWidth = roomsGrid.querySelector('.room-card').offsetWidth;
-      const index = Math.round(roomsGrid.scrollLeft / cardWidth);
+        service.getDetails(
+          { placeId, fields: ["rating","user_ratings_total","reviews"] },
+          (place, st) => {
+            if (st !== google.maps.places.PlacesServiceStatus.OK || !place){
+              console.error("Google Reviews getDetails error:", st);
+              return;
+            }
 
-      dots.forEach(dot => dot.classList.remove('active'));
-      if (dots[index]) dots[index].classList.add('active');
-    });
+            const ratingEl = document.getElementById("gr-rating");
+            const totalEl  = document.getElementById("gr-total");
+            const starsEl  = document.getElementById("gr-stars");
+            const trackEl  = document.getElementById("gr-track");
+
+            if (ratingEl) ratingEl.textContent = (place.rating ?? "—");
+            if (totalEl) totalEl.textContent = place.user_ratings_total ? `${place.user_ratings_total} total reviews` : "";
+            if (starsEl) grRenderStars(starsEl, place.rating || 0);
+
+            if (!trackEl) return;
+            trackEl.innerHTML = "";
+
+            // 4–5 star filter + sort by time within returned set
+            const reviews = (place.reviews || [])
+              .filter(r => (r.rating || 0) >= 4)
+              .sort((a,b) => (b.time||0)-(a.time||0))
+              .slice(0, 5);
+
+            if(!reviews.length){
+              trackEl.innerHTML = '<div class="gr-card">No 4–5 star reviews found.</div>';
+              return;
+            }
+
+            // truncate + read more
+            const truncate = (t, max=220) => {
+              const s = (t || "").trim();
+              if (s.length <= max) return { short:s, full:s, isLong:false };
+              return { short: s.slice(0, max).trim() + "…", full:s, isLong:true };
+            };
+
+            for(const r of reviews){
+              const author = grSafeText(r.author_name);
+              const date   = grFormatDate(r.time);
+              const rr     = r.rating || 0;
+
+              const fullText = grSafeText(r.text || "");
+              const t = truncate(fullText, 220);
+
+              const starsHtml = Array.from({length:5}).map((_,i) =>
+                i < rr ? '<i class="fa-solid fa-star"></i>' : '<i class="fa-regular fa-star"></i>'
+              ).join("");
+
+              const id = "gr_" + Math.random().toString(16).slice(2);
+
+              trackEl.insertAdjacentHTML("beforeend", `
+                <div class="gr-card">
+                  <div class="gr-card-top">
+                    <div class="gr-author">${author}</div>
+                    <div class="gr-date">${date}</div>
+                  </div>
+                  <div class="gr-card-stars">${starsHtml}</div>
+                  <div class="gr-text" id="${id}" data-full="${t.full}" data-short="${t.short}">
+                    ${t.short}
+                  </div>
+                  ${t.isLong ? `<button class="gr-more" type="button" data-target="${id}">Read more</button>` : ``}
+                </div>
+              `);
+            }
+
+            // read more
+            trackEl.querySelectorAll(".gr-more").forEach(btn => {
+              btn.addEventListener("click", () => {
+                const targetId = btn.getAttribute("data-target");
+                const el = document.getElementById(targetId);
+                if (!el) return;
+
+                const expanded = btn.classList.toggle("expanded");
+                el.innerHTML = expanded ? el.dataset.full : el.dataset.short;
+                btn.textContent = expanded ? "Collapse" : "Read more";
+              });
+            });
+
+            // slider controls
+            let index = 0;
+            const cards = Array.from(trackEl.querySelectorAll(".gr-card"));
+            const leftBtn  = document.querySelector(".gr-arrow.left");
+            const rightBtn = document.querySelector(".gr-arrow.right");
+
+            const update = () => {
+              if(!cards.length) return;
+              const cardWidth = cards[0].offsetWidth + 14; // gap
+              const maxIndex = Math.max(0, cards.length - 1);
+              if (index > maxIndex) index = maxIndex;
+              trackEl.style.transform = `translateX(-${index * cardWidth}px)`;
+            };
+
+            if(leftBtn) leftBtn.onclick = () => { index = Math.max(0, index - 1); update(); };
+            if(rightBtn) rightBtn.onclick = () => { index = Math.min(cards.length - 1, index + 1); update(); };
+
+            window.addEventListener("resize", update);
+            update();
+          }
+        );
+      }
+    );
   }
 </script>
 
+<!-- ✅ PUT YOUR KEY HERE -->
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&libraries=places&callback=initGoogleReviews"
+  async defer>
+</script>
 
-
+<!-- optional scripts (if these exist in your project) -->
 <script src="assets/css/js/menu.js"></script>
 <script src="assets/css/js/navbar.js"></script>
+
 </body>
 </html>
-
-  

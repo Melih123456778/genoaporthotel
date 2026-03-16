@@ -978,7 +978,7 @@ body {
   position: relative;                 /* overlay düzgün dursun */
   min-height: 500px;
 
-  background-image: url("https://res.cloudinary.com/doqhdodfl/image/upload/v1769711455/gk3_ygzy4e.jpg"); /* yolu buna göre ayarla */
+  background-image: url("https://res.cloudinary.com/doqhdodfl/image/upload/v1769795978/slider-istanbul-3_x4vglh.jpg"); /* yolu buna göre ayarla */
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
@@ -3501,4 +3501,360 @@ body.lightbox-open {
     width: 110px;        /* mobilde ideal */
     opacity: 0.6;
   }
+}
+
+/* ===============================
+   GOOGLE REVIEWS (Places)
+================================ */
+.reviews-wrap{
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 18px;
+}
+
+.reviews-summary{
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 18px;
+  padding: 18px;
+  backdrop-filter: blur(10px);
+}
+
+.reviews-score{
+  display:flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.reviews-score .score{
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.reviews-score .outof{ opacity:.7; }
+
+.reviews-stars{
+  display:flex;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+.reviews-stars i{ font-size: 16px; }
+
+.reviews-meta{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.reviews-meta .badge{
+  display:inline-flex;
+  align-items:center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.06);
+  font-size: 13px;
+}
+.reviews-meta .hint{ font-size: 13px; opacity: .75; }
+
+.reviews-actions{ display:flex; gap: 10px; flex-wrap: wrap; }
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration:none;
+  transition: transform .15s ease, opacity .15s ease;
+  white-space: nowrap;
+}
+.btn:hover{ transform: translateY(-1px); opacity:.95; }
+.btn-primary{ background:#111; color:#fff; }
+
+.reviews-list{
+  display: grid;
+  gap: 12px;
+}
+
+.review-card{
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 18px;
+  padding: 16px 16px;
+  backdrop-filter: blur(10px);
+}
+.review-top{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.review-author{
+  font-weight: 600;
+}
+.review-date{
+  font-size: 12px;
+  opacity: .7;
+}
+.review-rating{
+  display:flex;
+  gap: 3px;
+  margin-bottom: 8px;
+}
+.review-rating i{ font-size: 14px; }
+.review-text{
+  opacity: .9;
+  line-height: 1.65;
+}
+
+@media (max-width: 860px){
+  .reviews-wrap{ grid-template-columns: 1fr; }
+}
+
+/* ===============================
+   GOOGLE REVIEWS (Places API)
+================================ */
+.gr-wrap{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 18px;
+  padding: 0 24px;
+}
+
+.gr-summary{
+  background: rgba(255,255,255,0.65);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 18px;
+  padding: 18px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.06);
+}
+
+.gr-score{
+  display:flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.gr-score-num{
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-dark);
+}
+
+.gr-score-outof{
+  opacity:.7;
+}
+
+.gr-stars{
+  display:flex;
+  gap: 4px;
+  margin-bottom: 12px;
+  color: var(--accent);
+}
+
+.gr-stars i{
+  font-size: 16px;
+}
+
+.gr-meta{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.gr-badge{
+  display:inline-flex;
+  align-items:center;
+  gap: 8px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.06);
+  font-size: 13px;
+}
+
+.gr-hint{
+  font-size: 13px;
+  opacity: .75;
+}
+
+.gr-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration:none;
+  transition: transform .15s ease, opacity .15s ease;
+}
+
+.gr-btn:hover{
+  transform: translateY(-1px);
+  opacity: .95;
+}
+
+.gr-btn-primary{
+  background: #111;
+  color: #fff;
+}
+
+.gr-btn-outline{
+  background: transparent;
+  color: #111;
+  border: 1px solid rgba(0,0,0,0.18);
+}
+
+.gr-list{
+  display:grid;
+  gap: 12px;
+}
+
+.gr-card{
+  background: rgba(255,255,255,0.65);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 18px;
+  padding: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.06);
+}
+
+.gr-card-top{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.gr-author{
+  font-weight: 600;
+}
+
+.gr-date{
+  font-size: 12px;
+  opacity: .7;
+  white-space: nowrap;
+}
+
+.gr-card-stars{
+  display:flex;
+  gap: 3px;
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.gr-card-stars i{
+  font-size: 14px;
+}
+
+.gr-text{
+  opacity: .92;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px){
+  .gr-wrap{
+    grid-template-columns: 1fr;
+    padding: 0 16px;
+  }
+  .gr-btn{
+    width: auto;
+    margin-right: 10px;
+  }
+  .gr-summary{
+    display:flex;
+    flex-direction: column;
+  }
+}
+/* Nav CTA + Hero CTA */
+.nav-cta{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  background: #111;
+  color: #fff;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+.hero-cta{ margin-top: 14px; display:flex; gap:10px; flex-wrap:wrap; }
+.hero-btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding: 12px 16px; border-radius: 12px; font-weight: 700;
+  text-decoration:none; border: 1px solid rgba(255,255,255,0.3);
+  color:#fff; backdrop-filter: blur(8px);
+}
+.hero-btn.primary{ background:#fff; color:#111; border-color: transparent; }
+
+/* Google Reviews slider */
+.gr-slider{
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+}
+.gr-track{
+  display: flex;
+  gap: 14px;
+  transition: transform .35s ease;
+  will-change: transform;
+  padding: 6px 52px; /* arrows space */
+}
+.gr-track .gr-card{
+  min-width: 280px;
+  max-width: 280px;
+  height: 100%;
+}
+.gr-arrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  z-index: 5;
+}
+.gr-arrow.left{ left: 8px; }
+.gr-arrow.right{ right: 8px; }
+
+.gr-more{
+  margin-top: 10px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  opacity: .9;
+}
+.gr-more:hover{ opacity: 1; }
+
+@media (max-width: 768px){
+  .nav-cta{ display:none; } /* mobilde alttaki mobile-actions var */
+  .gr-track{ padding: 6px 44px; }
+  .gr-track .gr-card{ min-width: 82vw; max-width: 82vw; }
 }
